@@ -1,0 +1,27 @@
+{
+    "Profile"               :"Profile",
+    "profile_name"          : "Profile name is , :name",
+    "Edit Role"             : "Edit Role ",
+    "job_title"             : "Job Title",
+    "job_desc"              : "Job Description",
+    "Role"                  : "Show Role ",
+    "job_address"           : "Job Address",
+    "job_sub_title"         : "Job Sub Title",
+
+    "Show Category"         : "Show Category name is , :name",
+    "Service"               : "Service name is , :name",
+    "Country"               : "Country",
+    "SpecialtieُAction"      :"Specialtie name is , :name",
+    "EmployeeAction"        :"Employee name is , :name",
+    "patientAction"         :"Patient name is , :name",
+    "Administrative"        :"إداري",
+    "Residential"           :"سكني",
+    "Commercial"            :"تجاري"
+
+
+
+
+}
+
+
+
