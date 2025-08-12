@@ -85,21 +85,18 @@ if (!function_exists('syncPermisionsPublisher')) {
 //     }
 // }
 if (!function_exists('syncPermisions')) {
-    function syncPermisions($model = null)
+    function syncPermisions()
     {
         $routes = getAdminRoutes();
+
         foreach ($routes as $route) {
-            $permissionExist = (clone $model)->where('name', $route)->first();
-            if ($permissionExist == null) {
-                Permission::create([
-                    'name' => $route,
-                    'guard_name' => 'admin',
-                ]);
-            }
+            Permission::updateOrCreate(
+                ['name' => $route, 'guard_name' => 'admin'],
+                ['name' => $route, 'guard_name' => 'admin']
+            );
         }
     }
 }
-
 
 if (!function_exists('transPermission')) {
     function transPermission($val)
